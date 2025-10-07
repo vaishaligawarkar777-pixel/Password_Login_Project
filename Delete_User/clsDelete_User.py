@@ -7,8 +7,8 @@ class clsDelete_User(QMainWindow):
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
         self.id=0
-        self.setFixedHeight(500)
-        self.setFixedWidth(500)
+        self.setFixedHeight(200)
+        self.setFixedWidth(400)
         self.ui.cmbselectuser.setFocus()
         self.conn=sqlite3.connect('DataBase.db')
         self.cursor=self.conn.cursor()
