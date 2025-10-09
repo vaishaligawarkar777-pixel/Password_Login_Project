@@ -6,6 +6,8 @@ class clsChange_Password(QMainWindow):
         super(clsChange_Password,self).__init__()
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
+        self.setFixedHeight(400)
+        self.setFixedWidth(400)
         self.ui.cmbusername.setFocus()
         self.conn = sqlite3.connect('DataBase.db')
         self.cursor = self.conn.cursor()
@@ -18,38 +20,28 @@ class clsChange_Password(QMainWindow):
 
     def changeBtnClick(self):
         if self.ui.cmbusername.currentText() != "":
-            if self.ui.txtoldpassword.text() != "":
-                if self.ui.txtpassword.text() != "":
-                    if self.ui.txtpassword.text() == self.ui.txtpassword1.text():
-                        UserName = self.ui.cmbusername.currentText()
-                        sql = f"Insert Into Change_Password Values(null,'{UserName}','{self.ui.txtoldpassword.text()}','{self.ui.txtpassword.text()}','{self.ui.txtpassword1.text()}')"
-                        self.cursor.execute(sql)
-                        self.conn.commit()
-                        self.loadDataInTable()
-                        msg = QMessageBox()
-                        msg.setIcon(QMessageBox.Information)
-                        msg.setWindowTitle("Info")
-                        msg.setText("User Added Susessufly ")
-                        msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
-                        msg.setDefaultButton(QMessageBox.Ok)
-                        result = msg.exec_()
-                        self.ui.cmbusername.setCurrentText("")
-                        self.ui.txtoldpassword.setText("")
-                        self.ui.txtpassword.setText("")
-                        self.ui.txtpassword1.setText("")
-                    else:
-                        msg = QMessageBox()
-                        msg.setIcon(QMessageBox.Information)
-                        msg.setWindowTitle("Info")
-                        msg.setText("Both Password Must be Same")
-                        msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
-                        msg.setDefaultButton(QMessageBox.Ok)
-                        result = msg.exec_()
+            if self.ui.txtpassword.text() != "":
+                if self.ui.txtpassword.text() == self.ui.txtpassword1.text():
+                    UserName = self.ui.cmbusername.currentText()
+                    sql = f"Insert Into Change_Password Values(null,'{UserName}','{self.ui.txtoldpassword.text()}','{self.ui.txtpassword.text()}','{self.ui.txtpassword1.text()}')"
+                    self.cursor.execute(sql)
+                    self.conn.commit()
+                    msg = QMessageBox()
+                    msg.setIcon(QMessageBox.Information)
+                    msg.setWindowTitle("Info")
+                    msg.setText("User Added Successfully ")
+                    msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
+                    msg.setDefaultButton(QMessageBox.Ok)
+                    result = msg.exec_()
+                    self.ui.cmbusername.setCurrentText("")
+                    self.ui.txtoldpassword.setText("")
+                    self.ui.txtpassword.setText("")
+                    self.ui.txtpassword1.setText("")
                 else:
                     msg = QMessageBox()
                     msg.setIcon(QMessageBox.Information)
                     msg.setWindowTitle("Info")
-                    msg.setText("Password  can not be blank")
+                    msg.setText("Both Password Must be Same")
                     msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
                     msg.setDefaultButton(QMessageBox.Ok)
                     result = msg.exec_()
@@ -57,10 +49,11 @@ class clsChange_Password(QMainWindow):
                 msg = QMessageBox()
                 msg.setIcon(QMessageBox.Information)
                 msg.setWindowTitle("Info")
-                msg.setText("Old password can not be blank")
+                msg.setText("Password  can not be blank")
                 msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
                 msg.setDefaultButton(QMessageBox.Ok)
-                result = msg.exec_()
+
+
         else:
             msg = QMessageBox()
             msg.setIcon(QMessageBox.Information)
@@ -69,10 +62,6 @@ class clsChange_Password(QMainWindow):
             msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
             msg.setDefaultButton(QMessageBox.Ok)
             result = msg.exec_()
-
-
-
-
 
 
 

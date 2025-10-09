@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Python_Code\user_Project\Change_Password\Change_Password.ui'
+# Form implementation generated from reading ui file 'D:\python_git\Password_Login_Project\Change_Password\Change_Password.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
