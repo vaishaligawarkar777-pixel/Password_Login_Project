@@ -17,13 +17,13 @@ class clsAdd_User(QMainWindow):
         if self.ui.txtusername.text()!="":
             if self.ui.txtpassword.text()!="":
                 if self.ui.txtpassword.text()==self.ui.txtpassword1.text():
-                    sql = f"insert into Add_User values(null,'{self.ui.txtusername.text()}','{self.ui.txtpassword.text()}','{self.ui.txtpassword1.text()}')"
+                    sql = f"insert into User_table values(null,'{self.ui.txtusername.text()}','{self.ui.txtpassword.text()}','{self.ui.txtpassword1.text()}')"
                     self.cursor.execute(sql)
                     self.conn.commit()
                     msg = QMessageBox()
                     msg.setIcon(QMessageBox.Information)
                     msg.setWindowTitle("Info")
-                    msg.setText("User Added Susessufly ")
+                    msg.setText("User Added Successfully ")
                     msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
                     msg.setDefaultButton(QMessageBox.Ok)
                     result = msg.exec_()
