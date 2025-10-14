@@ -20,10 +20,8 @@ class clsDelete_User(QMainWindow):
             self.ui.cmbselectuser.addItem(str(row[1]))
 
     def deleteBtnClick(self):
-        sql = f"select * from User_table where UserName='{self.ui.cmbselectuser.currentText()}'"
+        sql = f"delete from User_table where UserName='{self.ui.cmbselectuser.currentText()}'"
         self.cursor.execute(sql)
-        result = self.cursor.fetchall()
-        self.cursor.execute(f"delete from User_table where Id={self.id}")
         self.conn.commit()
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
