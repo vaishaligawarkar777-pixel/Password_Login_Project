@@ -46,7 +46,7 @@
      <string>Password</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txtname">
+   <widget class="QLineEdit" name="txtusername">
     <property name="geometry">
      <rect>
       <x>190</x>

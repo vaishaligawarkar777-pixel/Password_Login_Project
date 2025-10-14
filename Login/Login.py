@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Python_Code\user_Project\Login\Login.ui'
+# Form implementation generated from reading ui file 'D:\python_git\Password_Login_Project\Login\Login.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -25,9 +25,9 @@ class Ui_MainWindow(object):
         self.label_2.setGeometry(QtCore.QRect(70, 100, 81, 31))
         self.label_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
         self.label_2.setObjectName("label_2")
-        self.txtname = QtWidgets.QLineEdit(self.centralwidget)
-        self.txtname.setGeometry(QtCore.QRect(190, 40, 211, 31))
-        self.txtname.setObjectName("txtname")
+        self.txtusername = QtWidgets.QLineEdit(self.centralwidget)
+        self.txtusername.setGeometry(QtCore.QRect(190, 40, 211, 31))
+        self.txtusername.setObjectName("txtusername")
         self.txtpassword = QtWidgets.QLineEdit(self.centralwidget)
         self.txtpassword.setGeometry(QtCore.QRect(190, 100, 211, 31))
         self.txtpassword.setObjectName("txtpassword")
