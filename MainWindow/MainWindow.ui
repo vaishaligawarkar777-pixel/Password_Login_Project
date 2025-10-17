@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1017</width>
+    <width>719</width>
     <height>600</height>
    </rect>
   </property>
@@ -25,7 +25,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1017</width>
+     <width>719</width>
      <height>26</height>
     </rect>
    </property>
@@ -38,7 +38,28 @@
     <addaction name="actionChange_Password"/>
     <addaction name="actionLogin"/>
    </widget>
+   <widget class="QMenu" name="menuStudent">
+    <property name="title">
+     <string>Student</string>
+    </property>
+    <addaction name="actionStudent_File"/>
+   </widget>
+   <widget class="QMenu" name="menuFees">
+    <property name="title">
+     <string>Fees</string>
+    </property>
+    <addaction name="actionFees_Form"/>
+   </widget>
+   <widget class="QMenu" name="menuReport">
+    <property name="title">
+     <string>Report</string>
+    </property>
+    <addaction name="actionRepost_Form"/>
+   </widget>
    <addaction name="menuTools"/>
+   <addaction name="menuStudent"/>
+   <addaction name="menuFees"/>
+   <addaction name="menuReport"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAdd_User">
@@ -59,6 +80,21 @@
   <action name="actionLogin">
    <property name="text">
     <string>Login</string>
+   </property>
+  </action>
+  <action name="actionStudent_File">
+   <property name="text">
+    <string>Student_Form</string>
+   </property>
+  </action>
+  <action name="actionFees_Form">
+   <property name="text">
+    <string>Fees_Form</string>
+   </property>
+  </action>
+  <action name="actionRepost_Form">
+   <property name="text">
+    <string>Report_Form</string>
    </property>
   </action>
  </widget>

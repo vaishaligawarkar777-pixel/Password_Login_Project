@@ -19,6 +19,7 @@ class clsMainWindow(QMainWindow):
         self.ui.mdiArea.addSubWindow(self.a1)
         self.a1.show()
 
+
     def Delete_UserClick(self):
         self.d1 = clsDelete_User()
         self.ui.mdiArea.addSubWindow(self.d1)

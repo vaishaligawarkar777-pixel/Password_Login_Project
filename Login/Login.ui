@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>469</width>
-    <height>301</height>
+    <width>461</width>
+    <height>280</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 255, 255);
+border-color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -19,12 +23,14 @@
      <rect>
       <x>70</x>
       <y>40</y>
-      <width>91</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(232, 232, 232);
+</string>
     </property>
     <property name="text">
      <string>User Name</string>
@@ -40,7 +46,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(232, 232, 232);</string>
     </property>
     <property name="text">
      <string>Password</string>
@@ -55,6 +62,10 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+selection-color: rgb(170, 170, 255);</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="txtpassword">
     <property name="geometry">
@@ -65,35 +76,32 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
    </widget>
    <widget class="QPushButton" name="btnlogin">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>160</x>
       <y>170</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(185, 185, 185);
+</string>
     </property>
     <property name="text">
      <string>Login</string>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>469</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

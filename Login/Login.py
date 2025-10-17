@@ -14,35 +14,39 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(469, 301)
+        MainWindow.resize(461, 280)
+        MainWindow.setStyleSheet("background-color: rgb(170, 255, 255);\n"
+"border-color: rgb(0, 0, 0);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(70, 40, 91, 31))
-        self.label.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"alternate-background-color: rgb(85, 170, 255);\n"
+"background-color: rgb(255, 255, 255);")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(70, 100, 81, 31))
-        self.label_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"border-color: rgb(0, 0, 0);\n"
+"background-color: rgb(255, 255, 255);")
         self.label_2.setObjectName("label_2")
         self.txtusername = QtWidgets.QLineEdit(self.centralwidget)
         self.txtusername.setGeometry(QtCore.QRect(190, 40, 211, 31))
+        self.txtusername.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"selection-color: rgb(170, 170, 255);")
         self.txtusername.setObjectName("txtusername")
         self.txtpassword = QtWidgets.QLineEdit(self.centralwidget)
         self.txtpassword.setGeometry(QtCore.QRect(190, 100, 211, 31))
+        self.txtpassword.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.txtpassword.setEchoMode(QtWidgets.QLineEdit.Password)
         self.txtpassword.setObjectName("txtpassword")
         self.btnlogin = QtWidgets.QPushButton(self.centralwidget)
         self.btnlogin.setGeometry(QtCore.QRect(190, 170, 93, 28))
-        self.btnlogin.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.btnlogin.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(255, 255, 255);")
         self.btnlogin.setObjectName("btnlogin")
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 469, 26))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)

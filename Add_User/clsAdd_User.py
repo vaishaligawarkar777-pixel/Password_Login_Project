@@ -6,7 +6,7 @@ class clsAdd_User(QMainWindow):
         super(clsAdd_User,self).__init__()
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
-        self.setFixedHeight(400)
+        self.setFixedHeight(350)
         self.setFixedWidth(400)
         self.ui.txtusername.setFocus()
         self.conn=sqlite3.connect('DataBase.db')
@@ -17,19 +17,20 @@ class clsAdd_User(QMainWindow):
         if self.ui.txtusername.text()!="":
             if self.ui.txtpassword.text()!="":
                 if self.ui.txtpassword.text()==self.ui.txtpassword1.text():
-                    sql = f"insert into User_table values(null,'{self.ui.txtusername.text()}','{self.ui.txtpassword.text()}','{self.ui.txtpassword1.text()}')"
-                    self.cursor.execute(sql)
-                    self.conn.commit()
-                    msg = QMessageBox()
-                    msg.setIcon(QMessageBox.Information)
-                    msg.setWindowTitle("Info")
-                    msg.setText("User Added Successfully ")
-                    msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
-                    msg.setDefaultButton(QMessageBox.Ok)
-                    result = msg.exec_()
-                    self.ui.txtusername.setText("")
-                    self.ui.txtpassword.setText("")
-                    self.ui.txtpassword1.setText("")
+
+                        sql = f"insert into User_table values(null,'{self.ui.txtusername.text()}','{self.ui.txtpassword.text()}','{self.ui.txtpassword1.text()}')"
+                        self.cursor.execute(sql)
+                        self.conn.commit()
+                        msg = QMessageBox()
+                        msg.setIcon(QMessageBox.Information)
+                        msg.setWindowTitle("Info")
+                        msg.setText("User Added Successfully ")
+                        msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
+                        msg.setDefaultButton(QMessageBox.Ok)
+                        result = msg.exec_()
+                        self.ui.txtusername.setText("")
+                        self.ui.txtpassword.setText("")
+                        self.ui.txtpassword1.setText("")
                 else:
                     msg = QMessageBox()
                     msg.setIcon(QMessageBox.Information)

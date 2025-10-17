@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Python_Code\user_Project\Add_User\Add_User.ui'
+# Form implementation generated from reading ui file 'D:\python_git\Password_Login_Project\Add_User\Add_User.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -16,41 +16,49 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(400, 300)
         MainWindow.setMaximumSize(QtCore.QSize(400, 300))
-        MainWindow.setStyleSheet("")
+        MainWindow.setStyleSheet("background-color: rgb(255, 170, 255);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(40, 30, 91, 31))
         self.label.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(255, 255, 255);\n"
 "gridline-color: rgb(236, 236, 236);\n"
 "border-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(40, 90, 91, 31))
-        self.label_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(255, 255, 255);")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(40, 150, 91, 31))
-        self.label_3.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.label_3.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(255, 255, 255);")
         self.label_3.setObjectName("label_3")
         self.txtusername = QtWidgets.QLineEdit(self.centralwidget)
         self.txtusername.setGeometry(QtCore.QRect(150, 30, 221, 31))
+        self.txtusername.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.txtusername.setObjectName("txtusername")
         self.txtpassword = QtWidgets.QLineEdit(self.centralwidget)
         self.txtpassword.setGeometry(QtCore.QRect(150, 90, 221, 31))
+        self.txtpassword.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.txtpassword.setEchoMode(QtWidgets.QLineEdit.Password)
         self.txtpassword.setObjectName("txtpassword")
         self.txtpassword1 = QtWidgets.QLineEdit(self.centralwidget)
         self.txtpassword1.setGeometry(QtCore.QRect(150, 150, 221, 31))
+        self.txtpassword1.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.txtpassword1.setEchoMode(QtWidgets.QLineEdit.Password)
         self.txtpassword1.setObjectName("txtpassword1")
         self.btnregister = QtWidgets.QPushButton(self.centralwidget)
         self.btnregister.setGeometry(QtCore.QRect(40, 240, 93, 28))
-        self.btnregister.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.btnregister.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(255, 255, 255);")
         self.btnregister.setObjectName("btnregister")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(290, 240, 93, 28))
-        self.pushButton_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
+        self.pushButton_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(255, 255, 255);")
         self.pushButton_2.setObjectName("pushButton_2")
         MainWindow.setCentralWidget(self.centralwidget)
 

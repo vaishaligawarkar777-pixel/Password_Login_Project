@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Python_Code\user_Project\MainWindow\MainWindow.ui'
+# Form implementation generated from reading ui file 'D:\python_git\Password_Login_Project\MainWindow\MainWindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1017, 600)
+        MainWindow.resize(719, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
@@ -24,10 +24,16 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.mdiArea)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1017, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 719, 26))
         self.menubar.setObjectName("menubar")
         self.menuTools = QtWidgets.QMenu(self.menubar)
         self.menuTools.setObjectName("menuTools")
+        self.menuStudent = QtWidgets.QMenu(self.menubar)
+        self.menuStudent.setObjectName("menuStudent")
+        self.menuFees = QtWidgets.QMenu(self.menubar)
+        self.menuFees.setObjectName("menuFees")
+        self.menuReport = QtWidgets.QMenu(self.menubar)
+        self.menuReport.setObjectName("menuReport")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -40,11 +46,23 @@ class Ui_MainWindow(object):
         self.actionChange_Password.setObjectName("actionChange_Password")
         self.actionLogin = QtWidgets.QAction(MainWindow)
         self.actionLogin.setObjectName("actionLogin")
+        self.actionStudent_File = QtWidgets.QAction(MainWindow)
+        self.actionStudent_File.setObjectName("actionStudent_File")
+        self.actionFees_Form = QtWidgets.QAction(MainWindow)
+        self.actionFees_Form.setObjectName("actionFees_Form")
+        self.actionRepost_Form = QtWidgets.QAction(MainWindow)
+        self.actionRepost_Form.setObjectName("actionRepost_Form")
         self.menuTools.addAction(self.actionAdd_User)
         self.menuTools.addAction(self.actionDelete_User)
         self.menuTools.addAction(self.actionChange_Password)
         self.menuTools.addAction(self.actionLogin)
+        self.menuStudent.addAction(self.actionStudent_File)
+        self.menuFees.addAction(self.actionFees_Form)
+        self.menuReport.addAction(self.actionRepost_Form)
         self.menubar.addAction(self.menuTools.menuAction())
+        self.menubar.addAction(self.menuStudent.menuAction())
+        self.menubar.addAction(self.menuFees.menuAction())
+        self.menubar.addAction(self.menuReport.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -53,7 +71,13 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.menuTools.setTitle(_translate("MainWindow", "Tools"))
+        self.menuStudent.setTitle(_translate("MainWindow", "Student"))
+        self.menuFees.setTitle(_translate("MainWindow", "Fees"))
+        self.menuReport.setTitle(_translate("MainWindow", "Report"))
         self.actionAdd_User.setText(_translate("MainWindow", "Add_User"))
         self.actionDelete_User.setText(_translate("MainWindow", "Delete_User"))
         self.actionChange_Password.setText(_translate("MainWindow", "Change_Password"))
         self.actionLogin.setText(_translate("MainWindow", "Login"))
+        self.actionStudent_File.setText(_translate("MainWindow", "Student_Form"))
+        self.actionFees_Form.setText(_translate("MainWindow", "Fees_Form"))
+        self.actionRepost_Form.setText(_translate("MainWindow", "Report_Form"))
