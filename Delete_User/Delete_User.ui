@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -24,7 +27,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(184, 184, 184);</string>
     </property>
     <property name="text">
      <string>Select User</string>
@@ -39,6 +43,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="btndelete">
     <property name="geometry">
@@ -50,7 +57,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">background-color: rgb(186, 186, 139);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 170, 127);</string>
     </property>
     <property name="text">
      <string>Delete</string>
@@ -66,7 +75,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(170, 170, 127);</string>
     </property>
     <property name="text">
      <string>Close</string>
