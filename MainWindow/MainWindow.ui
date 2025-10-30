@@ -56,10 +56,22 @@
     </property>
     <addaction name="actionOpen_Form3"/>
    </widget>
+   <widget class="QMenu" name="menuMonthlyReport">
+    <property name="title">
+     <string>Monthly_Report</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuYearly_Report">
+    <property name="title">
+     <string>Yearly_Report</string>
+    </property>
+   </widget>
    <addaction name="menuTools"/>
    <addaction name="menuStudent"/>
    <addaction name="menuFees"/>
    <addaction name="menuReport"/>
+   <addaction name="menuMonthlyReport"/>
+   <addaction name="menuYearly_Report"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAdd_User">

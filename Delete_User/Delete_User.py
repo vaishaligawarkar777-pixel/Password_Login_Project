@@ -14,29 +14,32 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(429, 171)
-        MainWindow.setStyleSheet("background-color: rgb(255, 255, 127);")
+        MainWindow.resize(363, 112)
+        MainWindow.setStyleSheet("background-color: rgb(255, 164, 254);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(50, 30, 91, 21))
+        self.label.setGeometry(QtCore.QRect(0, 10, 100, 21))
+        self.label.setMinimumSize(QtCore.QSize(100, 0))
         self.label.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
-"background-color: rgb(184, 184, 184);")
+"")
+        self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label.setObjectName("label")
         self.cmbselectuser = QtWidgets.QComboBox(self.centralwidget)
-        self.cmbselectuser.setGeometry(QtCore.QRect(160, 30, 201, 31))
+        self.cmbselectuser.setGeometry(QtCore.QRect(110, 10, 231, 31))
         self.cmbselectuser.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.cmbselectuser.setObjectName("cmbselectuser")
         self.btndelete = QtWidgets.QPushButton(self.centralwidget)
-        self.btndelete.setGeometry(QtCore.QRect(160, 110, 93, 28))
-        self.btndelete.setStyleSheet("background-color: rgb(186, 186, 139);\n"
+        self.btndelete.setGeometry(QtCore.QRect(110, 60, 111, 28))
+        self.btndelete.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "font: 10pt \"MS Shell Dlg 2\";\n"
-"background-color: rgb(170, 170, 127);")
+"")
         self.btndelete.setObjectName("btndelete")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(270, 110, 93, 28))
+        self.pushButton_2.setGeometry(QtCore.QRect(232, 60, 111, 28))
         self.pushButton_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
-"background-color: rgb(170, 170, 127);")
+"background-color: rgb(255, 255, 255);\n"
+"")
         self.pushButton_2.setObjectName("pushButton_2")
         MainWindow.setCentralWidget(self.centralwidget)
 

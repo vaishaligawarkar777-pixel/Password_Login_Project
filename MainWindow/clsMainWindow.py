@@ -5,6 +5,8 @@ from MainWindow.MainWindow import Ui_MainWindow
 from Add_User.clsAdd_User import clsAdd_User
 from Delete_User.clsDelete_User import clsDelete_User
 from Change_Password.clsChange_Password import clsChange_Password
+from Monthly_Report.clsMonthly_Report import clsMonthly_Report
+from Yearly_Report.clsYearly_Report import clsYearly_Report
 
 from Student.clsStudent import clsStudent
 from Fees.clsFees import clsFees
@@ -19,9 +21,12 @@ class clsMainWindow(QMainWindow):
         self.ui.actionAdd_User.triggered.connect(self.Add_UserClick)
         self.ui.actionChange_Password.triggered.connect(self.Change_PasswordClick)
         self.ui.actionDelete_User.triggered.connect(self.Delete_UserClick)
-        self.ui.actionOpen_Form1.triggered.connect(self.Open_Form1)
-        self.ui.actionOpen_Form2.triggered.connect(self.Open_Form2)
-        self.ui.actionOpen_Form3.triggered.connect(self.Open_Form3)
+
+        self.ui.menuStudent.aboutToShow.connect(self.Open_Form1)
+        self.ui.menuFees.aboutToShow.connect(self.Open_Form2)
+        self.ui.menuReport.aboutToShow.connect(self.Open_Form3)
+        self.ui.menuMonthlyReport.aboutToShow.connect(self.Open_Form4)
+        self.ui.menuYearly_Report.aboutToShow.connect(self.Open_Form5)
 
     def Add_UserClick(self):
         self.a1 = clsAdd_User()
@@ -47,11 +52,21 @@ class clsMainWindow(QMainWindow):
         self.f1=clsFees()
         self.ui.mdiArea.addSubWindow(self.f1)
         self.f1.show()
+
     def Open_Form3(self):
         self.r1=clsReport()
         self.ui.mdiArea.addSubWindow(self.r1)
         self.r1.show()
-   
+
+    def Open_Form4(self):
+        self.m1=clsMonthly_Report()
+        self.ui.mdiArea.addSubWindow(self.m1)
+        self.m1.show()
+
+    def Open_Form5(self):
+        self.y1=clsYearly_Report()
+        self.ui.mdiArea.addSubWindow(self.y1)
+        self.y1.show()
 
 
 

@@ -6,22 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1381</width>
-    <height>415</height>
+    <width>1075</width>
+    <height>284</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(237, 255, 171);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>171</width>
+      <x>0</x>
+      <y>10</y>
+      <width>161</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
@@ -29,18 +38,22 @@
     <property name="text">
      <string>Select Student Name</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>280</y>
-      <width>61</width>
+      <x>350</x>
+      <y>240</y>
+      <width>81</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Close</string>
@@ -49,21 +62,27 @@
    <widget class="QTableWidget" name="tableWidget1">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>440</x>
       <y>10</y>
-      <width>831</width>
-      <height>331</height>
+      <width>621</width>
+      <height>261</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QDateEdit" name="dateedit">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>90</y>
-      <width>261</width>
+      <x>190</x>
+      <y>70</y>
+      <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="calendarPopup">
      <bool>true</bool>
@@ -72,14 +91,15 @@
    <widget class="QPushButton" name="btndelete1">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>280</y>
-      <width>61</width>
+      <x>270</x>
+      <y>240</y>
+      <width>71</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Delete</string>
@@ -88,14 +108,15 @@
    <widget class="QPushButton" name="btnsave1">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>280</y>
-      <width>61</width>
+      <x>90</x>
+      <y>240</y>
+      <width>81</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Save</string>
@@ -104,14 +125,15 @@
    <widget class="QPushButton" name="btnupdate1">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>280</y>
-      <width>71</width>
+      <x>180</x>
+      <y>240</y>
+      <width>81</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Update</string>
@@ -120,21 +142,30 @@
    <widget class="QLineEdit" name="txtfees">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>150</y>
-      <width>261</width>
+      <x>190</x>
+      <y>130</y>
+      <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>90</y>
-      <width>61</width>
+      <x>60</x>
+      <y>70</y>
+      <width>101</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
@@ -142,15 +173,24 @@
     <property name="text">
      <string>Date</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>150</y>
-      <width>61</width>
+      <x>60</x>
+      <y>130</y>
+      <width>101</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
@@ -158,15 +198,24 @@
     <property name="text">
      <string>Fees</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>200</y>
-      <width>61</width>
+      <x>60</x>
+      <y>190</y>
+      <width>101</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
@@ -174,18 +223,22 @@
     <property name="text">
      <string>Subject</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QPushButton" name="btnnew1">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>280</y>
-      <width>61</width>
+      <x>10</x>
+      <y>240</y>
+      <width>71</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>New</string>
@@ -194,35 +247,30 @@
    <widget class="QComboBox" name="cmbselectstudent">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>20</y>
-      <width>261</width>
+      <x>190</x>
+      <y>10</y>
+      <width>241</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtsubject">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>200</y>
-      <width>261</width>
+      <x>190</x>
+      <y>190</y>
+      <width>241</width>
       <height>31</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1381</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

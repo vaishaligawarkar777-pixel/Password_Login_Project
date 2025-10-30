@@ -6,7 +6,7 @@ class clsAdd_User(QMainWindow):
         super(clsAdd_User,self).__init__()
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
-        self.setFixedHeight(350)
+        self.setFixedHeight(220)
         self.setFixedWidth(400)
         self.ui.txtusername.setFocus()
         self.conn=sqlite3.connect('DataBase.db')

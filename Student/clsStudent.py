@@ -8,8 +8,8 @@ class clsStudent(QMainWindow):
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
         self.id=0
-        self.setFixedHeight(500)
-        self.setFixedWidth(1220)
+        self.setFixedHeight(400)
+        self.setFixedWidth(1300)
         self.ui.txtstudentname.setFocus()
         self.conn=sqlite3.connect('DataBase.db')
         self.cursor=self.conn.cursor()
@@ -19,18 +19,24 @@ class clsStudent(QMainWindow):
         self.ui.btndelete.clicked.connect(self.DeleteBtnClick)
         self.ui.radMale.setChecked(True)
         Subject = {
-            "CP",
+            "C Programming",
             "CPP",
             "Java",
             "Python",
-            "SQL"
+            "SQL",
+            "ASP.NET",
+            "PHP",
+            "CSS",
+            "HTML",
+            "LOS"
         }
         self.ui.cmbsubject.addItems(Subject)
         Batch={
             "BCA",
-            "BSC-Sci",
+            "BSC-CS",
             "MCA",
-            "MSC-Sci"
+            "MSC-CS",
+            "BE"
         }
         self.ui.cmbbatch.addItems(Batch)
         self.ui.tableWidget.setColumnCount(7)

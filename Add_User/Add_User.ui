@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>393</width>
+    <height>231</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -20,70 +20,97 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 170, 255);</string>
+   <string notr="true">background-color: rgb(96, 229, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>30</y>
-      <width>91</width>
+      <x>10</x>
+      <y>10</y>
+      <width>100</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="whatsThis">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(255, 255, 255);
+
 gridline-color: rgb(236, 236, 236);
-border-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));</string>
+</string>
     </property>
     <property name="text">
      <string>User Name</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>90</y>
-      <width>91</width>
+      <x>10</x>
+      <y>70</y>
+      <width>100</width>
       <height>31</height>
      </rect>
     </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(255, 255, 255);</string>
+</string>
     </property>
     <property name="text">
      <string>Password</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>150</y>
-      <width>91</width>
+      <x>10</x>
+      <y>130</y>
+      <width>100</width>
       <height>31</height>
      </rect>
     </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(255, 255, 255);</string>
+</string>
     </property>
     <property name="text">
      <string>Password</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtusername">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>30</y>
+      <x>130</x>
+      <y>10</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -95,8 +122,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="txtpassword">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>90</y>
+      <x>130</x>
+      <y>70</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -111,8 +138,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="txtpassword1">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>150</y>
+      <x>130</x>
+      <y>130</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -127,8 +154,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="btnregister">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>240</y>
+      <x>130</x>
+      <y>180</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -144,8 +171,8 @@ background-color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>240</y>
+      <x>260</x>
+      <y>180</y>
       <width>93</width>
       <height>28</height>
      </rect>

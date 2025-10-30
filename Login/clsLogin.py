@@ -8,8 +8,8 @@ class clsLogin(QMainWindow):
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
         self.id=0
-        self.setFixedHeight(300)
-        self.setFixedWidth(450)
+        self.setFixedHeight(170)
+        self.setFixedWidth(340)
         self.ui.txtusername.setFocus()
         self.ui.btnlogin.clicked.connect(self.LoginBtnClick)
         self.m = clsMainWindow()

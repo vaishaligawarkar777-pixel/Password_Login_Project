@@ -6,8 +6,8 @@ class clsReport(QMainWindow):
         super(clsReport,self).__init__()
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
-        self.setFixedHeight(600)
-        self.setFixedWidth(650)
+        self.setFixedHeight(420)
+        self.setFixedWidth(590)
         self.conn=sqlite3.connect('DataBase.db')
         self.cursor=self.conn.cursor()
 

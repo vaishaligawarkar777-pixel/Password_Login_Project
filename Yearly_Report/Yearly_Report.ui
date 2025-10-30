@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 219, 198);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>9</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Select Year </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnShow">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>9</y>
+      <width>93</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Show</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>49</y>
+      <width>611</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbYear">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>2000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2001</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2002</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2003</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2004</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2005</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2006</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2007</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2008</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2009</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2010</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2011</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2012</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2013</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2014</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2015</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2016</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2017</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2018</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2019</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2020</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2021</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2022</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2023</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2024</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2025</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2026</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
