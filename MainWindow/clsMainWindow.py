@@ -67,6 +67,3 @@ class clsMainWindow(QMainWindow):
         self.y1=clsYearly_Report()
         self.ui.mdiArea.addSubWindow(self.y1)
         self.y1.show()
-
-
-

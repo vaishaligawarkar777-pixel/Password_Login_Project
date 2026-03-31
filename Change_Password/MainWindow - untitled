@@ -6,45 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>344</width>
-    <height>206</height>
+    <width>365</width>
+    <height>248</height>
    </rect>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>400</width>
-    <height>300</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(96, 229, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>11</x>
       <y>10</y>
-      <width>91</width>
+      <width>100</width>
       <height>31</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>50</width>
+      <width>100</width>
       <height>0</height>
      </size>
     </property>
-    <property name="whatsThis">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-
-gridline-color: rgb(236, 236, 236);
 </string>
     </property>
     <property name="text">
@@ -54,18 +40,83 @@ gridline-color: rgb(236, 236, 236);
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLineEdit" name="txtoldpassword">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>131</x>
       <y>60</y>
-      <width>91</width>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnchange">
+    <property name="geometry">
+     <rect>
+      <x>131</x>
+      <y>210</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(221, 221, 221);</string>
+    </property>
+    <property name="text">
+     <string>Change </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtpassword1">
+    <property name="geometry">
+     <rect>
+      <x>131</x>
+      <y>160</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtpassword">
+    <property name="geometry">
+     <rect>
+      <x>131</x>
+      <y>110</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>70</width>
+      <width>100</width>
       <height>0</height>
      </size>
     </property>
@@ -80,36 +131,10 @@ gridline-color: rgb(236, 236, 236);
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QComboBox" name="cmbusername">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>120</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>70</width>
-      <height>0</height>
-     </size>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-</string>
-    </property>
-    <property name="text">
-     <string>Password</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtusername">
-    <property name="geometry">
-     <rect>
-      <x>111</x>
+      <x>131</x>
       <y>10</y>
       <width>221</width>
       <height>31</height>
@@ -119,70 +144,75 @@ gridline-color: rgb(236, 236, 236);
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txtpassword">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>111</x>
+      <x>11</x>
       <y>60</y>
-      <width>221</width>
+      <width>100</width>
       <height>31</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::Password</enum>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtpassword1">
-    <property name="geometry">
-     <rect>
-      <x>111</x>
-      <y>120</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::Password</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnregister">
-    <property name="geometry">
-     <rect>
-      <x>111</x>
-      <y>170</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(255, 255, 255);</string>
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+</string>
     </property>
     <property name="text">
-     <string>Register</string>
+     <string>Old Password</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>241</x>
-      <y>170</y>
+      <x>261</x>
+      <y>210</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(255, 255, 255);</string>
+background-color: rgb(217, 217, 217);</string>
     </property>
     <property name="text">
-     <string>Close</string>
+     <string>Close </string>
     </property>
    </widget>
   </widget>
@@ -196,12 +226,12 @@ background-color: rgb(255, 255, 255);</string>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>309</x>
-     <y>280</y>
+     <x>300</x>
+     <y>218</y>
     </hint>
     <hint type="destinationlabel">
-     <x>202</x>
-     <y>303</y>
+     <x>27</x>
+     <y>206</y>
     </hint>
    </hints>
   </connection>
